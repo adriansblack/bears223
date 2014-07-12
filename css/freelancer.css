@@ -61,11 +61,11 @@ hr.star-light:after {
 }
 
 hr.star-primary {
-    border-color: #2c3e50;
+    border-color: #18bc9c;
 }
 
 hr.star-primary:after {
-    color: #2c3e50;
+    color: #18bc9c;
     background-color: #fff;
 }
 
@@ -184,7 +184,8 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #006666;
+    text-align: center;
 }
 
 @media(max-width:767px) {
@@ -198,7 +199,7 @@ section.success {
 }
 
 #portfolio {
-    margin-top: 630px;
+    margin-top: -50px;
 }
 
 #portfolio .portfolio-item {
@@ -435,7 +436,7 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #2c3e50;
+    background-color: #FCF7C2;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -445,7 +446,7 @@ footer .footer-below {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #2c3e50;
+    background-color: #FCF7C2;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
