@@ -86,7 +86,7 @@ header .container {
 
 header img {
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 0px;
 }
 
 header .intro-text .name {
@@ -102,9 +102,19 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+#signup {
+    font-size: 1.25em;
+    margin-top: 60px;
+}
+
 @media(min-width:768px) {
     header .container {
-        padding: 200px 0 100px;
+        padding: 130px 0 100px;
     }
 
     header .intro-text .name {
