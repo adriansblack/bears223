@@ -40,7 +40,7 @@ hr.star-primary {
     text-align: center;
 }
 
-hr.star-light:after,
+hr.star-light2:after,
 hr.star-primary:after {
     content: "\f005";
     display: inline-block;
@@ -73,21 +73,14 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
-header {
-    text-align: center;
-    color: #fff;
-    background: #18bc9c;
-}
+
+
 
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
 }
 
-header img {
-    display: block;
-    margin: 0 auto 0px;
-}
 
 header .intro-text .name {
     display: block;
@@ -95,6 +88,7 @@ header .intro-text .name {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
+    text-align: center;
 }
 
 header .intro-text .skills {
@@ -106,15 +100,23 @@ header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
+
+
 
 #signup {
-    font-size: 1.25em;
+    font-size: 1.3em;
     margin-top: 60px;
+    color: #fff;
+}
+
+.block {
+    margin-top: 130px;
+
 }
 
 @media(min-width:768px) {
     header .container {
-        padding: 130px 0 100px;
+        padding: 130px 0 400px;
     }
 
     header .intro-text .name {
@@ -124,6 +126,24 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
+}
+
+header {
+    background-image: url('../img/girlz2.png');
+    color: #ffffff;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    background-attachment: relative;
+    background-position: center center;
+    color:  #2c3e50;
 }
 
 @media(min-width:768px) {
@@ -184,7 +204,8 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #006666;
+    background: #18bc9c;
+    background: #2D4471;
     text-align: center;
 }
 
@@ -262,7 +283,7 @@ section.success {
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
     background: 0 0;
     transition: all .3s ease-in-out;
@@ -451,3 +472,4 @@ footer .footer-below {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+

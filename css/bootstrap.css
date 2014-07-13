@@ -1991,7 +1991,7 @@ select[multiple].input-lg {
   right: 15px;
 }
 .btn {
-  display: inline-block;
+  dislay: inline-block;
   margin-bottom: 0;
   font-weight: normal;
   text-align: center;
@@ -2009,6 +2009,7 @@ select[multiple].input-lg {
   -ms-user-select: none;
   user-select: none;
 }
+
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus {
