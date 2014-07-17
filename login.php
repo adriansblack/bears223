@@ -107,14 +107,46 @@
     } 
      
 ?> 
-<h1>Login</h1> 
-<form action="login.php" method="post"> 
-    Username:<br /> 
-    <input type="text" name="username" value="<?php echo $submitted_username; ?>" /> 
-    <br /><br /> 
-    Password:<br /> 
-    <input type="password" name="password" value="" /> 
-    <br /><br /> 
-    <input type="submit" value="Login" /> 
-</form> 
-<a href="register.php">Register</a>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Login  - CodePen</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="wrap">
+		<div class="avatar">
+      <img src="http://cdn.ialireza.me/avatar.png">
+		</div>
+		<form action="login.php" method="post"> 
+		<input type="text" placeholder="username" name="username" value="<?php echo $submitted_username; ?>" required>
+		<div class="bar">
+			<i></i>
+		</div>
+		<input type="password" name="password" placeholder="password" value ="" required>
+		<a href="register.php" class="forgot_link">Forgot</a>
+		<button type="submit" value="Login">Sign in</button>
+		<div class="bar2">
+			<i></i>
+		</div>	
+		</form> 
+		<a href="register/"><button id="register2" type="Register" value="Register">Register</div>
+	</button></a>
+
+  <script src='http://codepen.io/assets/libs/fullpage/none.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
+

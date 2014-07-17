@@ -22,4 +22,5 @@
 Hello <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>, secret content!<br /> 
 <a href="memberlist.php">Memberlist</a><br /> 
 <a href="edit_account.php">Edit Account</a><br /> 
+<a href="findmentors.php">FindMentors</a><br /> 
 <a href="logout.php">Logout</a>

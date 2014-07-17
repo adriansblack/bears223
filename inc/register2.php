@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -7,9 +7,9 @@
 
   <title>CodePen - Pen</title>
 
-  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="../css/reset.css">
 
-    <link rel="stylesheet" href="formstyle.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="../css/formstyle.css" media="screen" type="text/css" />
 
 </head>
 
@@ -58,7 +58,7 @@
 <!-- jQuery easing plugin -->
 <script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
 
- <script src="js/form.js"></script>
+ <script src="../js/form.js"></script>
 
 </body>
 
