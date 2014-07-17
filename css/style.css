@@ -1,18 +1,15 @@
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
-}
+/*custom font*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 body {
 	height: 100%;
 	/*Image only BG fallback*/
-	background: url('http://thecodeplayer.com/uploads/media/gs.png');
+	background: url('http://i60.tinypic.com/2rmwi3c.png');
 	/*background = gradient + image pattern combo*/
 	background: 
-		linear-gradient(rgba(255, 0, 0, 0.4), rgba(150, 40, 27, 0.8)), 
-		url('http://thecodeplayer.com/uploads/media/gs.png');
+		linear-gradient(rgba(129, 207, 224, 0.2), rgba(89, 171, 227 0.2)), 
+		url('http://i60.tinypic.com/2rmwi3c.png');
+	font-family: montserrat, arial, verdana;
 }
 .wrap {
 	width:350px;
@@ -41,7 +38,7 @@ body {
 .wrap input {
 	border: none;
 	background: #fff;
-  font-family:Lato ;
+  font-family:montserrat ;
   font-weight:700 ;
 	display: block;
 	height: 40px;
@@ -134,6 +131,7 @@ body {
 	font-size: 13px;	
 	border-bottom: 3px solid #307d63;
 	cursor: pointer;
+	font-family: montserrat, arial, verdana;
 }
 
 a:link {

@@ -3,6 +3,8 @@
     // First we execute our common code to connection to the database and start the session 
     require("common.php"); 
      
+     
+
     // This if statement checks to determine whether the registration form has been submitted 
     // If it has, then the registration code is run, otherwise the form is displayed 
     if(!empty($_POST)) 
@@ -164,6 +166,8 @@
             ':email' => $_POST['email'] 
         ); 
          
+         
+
         try 
         { 
             // Execute the query to create the user 
@@ -185,8 +189,10 @@
         // will be sent to the user if you do not die or exit. 
         die("Redirecting to login.php"); 
     } 
-     
+    
 ?> 
+
+
 
 <html>
 
@@ -194,25 +200,64 @@
 
   <meta charset="UTF-8">
 
-  <title>CodePen - Pen</title>
+  <title>MentorBear - Register</title>
 
   <link rel="stylesheet" href="css/reset.css">
 
-    <link rel="stylesheet" href="formstyle.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/formstyle.css" media="screen" type="text/css" />
 
 </head>
 
+<body>
 
-<h1>Register</h1> 
+
+ <!-- multistep form -->
 <form action="register.php" method="post" id="msform"> 
-    Username:<br /> 
-    <input type="text" name="username" value="" /> 
-    <br /><br /> 
-    E-Mail:<br /> 
-    <input type="text" name="email" value="" /> 
-    <br /><br /> 
-    Password:<br /> 
-    <input type="password" name="password" value="" /> 
-    <br /><br /> 
-    <input type="submit" value="Register" /> 
+   <!-- progressbar -->
+    <ul id="progressbar">
+        <li class="active">Account Setup</li>
+        <li>Extracurriculars</li>
+        <li>So much swag</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+        <h2 class="fs-title">Create your account</h2>
+        <h3 class="fs-subtitle">This is step 1</h3>
+        <input type="text" name="username" placeholder="Username" />
+        <input type="text" name="email" placeholder="Email" />
+        <input type="password" name="password" placeholder="Password" />
+        <input type="password" name="cpass" placeholder="Confirm Password" />
+        <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+        <h2 class="fs-title">Extracurriculars</h2>
+        <h3 class="fs-subtitle">List three of your academic or personal interests.</h3>
+        <input type="text" name="interestone" placeholder="" />
+        <input type="text" name="interesttwo" placeholder="" />
+        <input type="text" name="interestthree" placeholder="" />
+        <textarea name="address" placeholder="Short Bio"></textarea>
+        <input type="button" name="previous" class="previous action-button" value="Previous" />
+        <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+        <h2 class="fs-title">So much swag</h2>
+        <h3 class="fs-subtitle">Yay.</h3>
+        <input type="text" name="interestone" placeholder="" />
+        <input type="text" name="interesttwo" placeholder="" />
+        <input type="text" name="interestthree" placeholder="" />
+        <input type="button" name="previous" class="previous action-button" value="Previous" />
+       
+        <input type="submit" value="Register" />
+    </fieldset>
 </form>
+
+<!-- jQuery -->
+<script src="http://thecodeplayer.com/uploads/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<!-- jQuery easing plugin -->
+<script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+
+ <script src="js/form.js"></script>
+
+</body>
+
+</html>

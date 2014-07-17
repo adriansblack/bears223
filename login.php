@@ -113,7 +113,7 @@
 
   <meta charset="UTF-8">
 
-  <title>Login  - CodePen</title>
+  <title>MentorBear | Login</title>
 
   <link rel="stylesheet" href="css/reset.css">
 
@@ -125,7 +125,7 @@
 
   <div class="wrap">
 		<div class="avatar">
-      <img src="http://cdn.ialireza.me/avatar.png">
+      <img src="http://mentorbear.com/img/bear.png">
 		</div>
 		<form action="login.php" method="post"> 
 		<input type="text" placeholder="username" name="username" value="<?php echo $submitted_username; ?>" required>
@@ -134,12 +134,13 @@
 		</div>
 		<input type="password" name="password" placeholder="password" value ="" required>
 		<a href="register.php" class="forgot_link">Forgot</a>
-		<button type="submit" value="Login">Sign in</button>
+       <button id="register2" type="Submit" value="Login">Login</button>
 		<div class="bar2">
 			<i></i>
 		</div>	
 		</form> 
-		<a href="register/"><button id="register2" type="Register" value="Register">Register</div>
+		<a href="register.php"><button id="register2" type="Register" value="Register">Register
+        </div>
 	</button></a>
 
   <script src='http://codepen.io/assets/libs/fullpage/none.js'></script>
